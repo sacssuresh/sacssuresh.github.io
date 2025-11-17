@@ -1,18 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Suresh Kumar Balasubramanian</title>
-    <link rel="stylesheet" href="style.css" />
-    <script src="include.js" defer></script>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+
 <div class="container">
 
-    <!-- SIDEBAR (auto-included) -->
-    <aside id="sidebar-container" class="sidebar"></aside>
+    <!-- REAL SIDEBAR -->
+    <aside class="sidebar">
+
+        <div class="photo-card">
+            <img src="assets/profile.jpg" class="sidebar-photo" alt="Suresh">
+        </div>
+
+        <h2 class="sidebar-name">Suresh Kumar<br>Balasubramanian</h2>
+        <p class="sidebar-title">Architect • Engineer • Systems Thinker</p>
+
+        <div class="sidebar-content">
+            <h3>About Me</h3>
+            <p>
+                I like building things that are simple, reliable, and meaningful.
+                I enjoy breaking down complex ideas and understanding how systems behave.
+            </p>
+
+            <h3>Navigation</h3>
+            <p><a href="index.html">Home</a></p>
+            <p><a href="interests.html">Interests</a></p>
+
+            <div class="sidebar-divider"></div>
+
+            <h3>Links</h3>
+            <p><a href="https://github.com/sacssuresh" target="_blank">GitHub</a></p>
+            <p><a href="https://www.linkedin.com/in/sureshkumar-bala/" target="_blank">LinkedIn</a></p>
+            <p><a href="mailto:suresh@example.com">Email</a></p>
+        </div>
+
+    </aside>
+    <!-- END SIDEBAR -->
+
 
     <!-- MAIN CONTENT -->
     <main class="content">
@@ -20,60 +50,53 @@
         <h1>Architecting systems with clarity.</h1>
         <p class="intro-text">
             I enjoy building systems that feel simple, reliable, and thoughtful.
-            Most of my work revolves around understanding real-world behavior and designing
-            solutions that stay practical and predictable.
+            Most of my work revolves around understanding real-world behavior
+            and designing solutions that stay practical and predictable.
         </p>
 
         <h2>Work</h2>
 
-        <div class="feed-item">
+        <section class="feed-item">
             <h3>IoT Predictive Maintenance Platform</h3>
-            <p>Designed telemetry ingestion, lifecycle state modeling, and analytical snapshots to understand device behavior over time.</p>
-        </div>
+            <p>Telemetry ingestion, lifecycle state modeling, analytical snapshots…</p>
+        </section>
 
-        <div class="feed-item">
+        <section class="feed-item">
             <h3>Device Analytics Engine</h3>
-            <p>Built a Cosmos DB + Synapse analytical pipeline that helps visualize firmware distribution, trends, and anomalies.</p>
-        </div>
+            <p>Cosmos DB + Synapse pipeline for firmware distribution insights.</p>
+        </section>
 
-        <div class="feed-item">
+        <section class="feed-item">
             <h3>BudgetTracker App</h3>
-            <p>Simple, clean personal finance tool powered by EF Core and Postgres.</p>
-        </div>
+            <p>Simple personal finance tool using EF Core and Postgres.</p>
+        </section>
 
-        <div class="feed-item">
+        <section class="feed-item">
             <h3>Tapsy Mobile App</h3>
-            <p>A compact learning app built with React Native and supporting secure sessions.</p>
-        </div>
+            <p>A React Native learning app with clean architecture.</p>
+        </section>
 
         <h2>Writing</h2>
 
-        <div class="feed-item">
+        <section class="feed-item">
             <h3>Observability vs Monitoring</h3>
-            <p>A simple perspective on how modern systems benefit from structured signals.</p>
-        </div>
+            <p>How structured signals improve system clarity.</p>
+        </section>
 
-        <div class="feed-item">
+        <section class="feed-item">
             <h3>Designing Scalable IoT Platforms</h3>
-            <p>Notes on handling real-world device behavior at scale.</p>
-        </div>
+            <p>Notes on handling real-world scale and behavior.</p>
+        </section>
 
-        <div class="feed-item">
+        <section class="feed-item">
             <h3>Event-Driven Architecture</h3>
-            <p>Why events make systems predictable and easier to evolve.</p>
-        </div>
-
-        <div class="feed-item">
-            <h3>FinOps for IoT</h3>
-            <p>Understanding cost per device and real-world consumption behavior.</p>
-        </div>
-
-        <div class="feed-item">
-            <h3>Engineering with First Principles</h3>
-            <p>My approach to simplifying complex decisions.</p>
-        </div>
+            <p>Why predictable asynchronous flows matter.</p>
+        </section>
 
     </main>
+    <!-- END CONTENT -->
+
 </div>
+
 </body>
 </html>

@@ -18,11 +18,6 @@ body {
     padding: 20px;
     background-color: #fff;
     border-right: 1px solid #e5e5e5;
-    height: 100vh;
-    position: fixed;
-    top: 0;
-    left: 0;
-    overflow-y: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -149,63 +144,63 @@ body {
 /* =======================================
    MOBILE RESPONSIVE DESIGN (breakpoint)
    ======================================= */
+/* =======================================
+   MOBILE FULL-WIDTH FIX
+   ======================================= */
 @media (max-width: 768px) {
 
-    .container {
-        flex-direction: column;
-        padding: 0;
+    /* Entire page should stretch edge-to-edge */
+ .container {
+        display: block;
+        width: 100%;
+        max-width: none;
+        margin: 0 !important;
+        padding: 0 !important;
     }
 
     /* Sidebar becomes full width */
     .sidebar {
         width: 100%;
-        max-width: 100%;
-        padding: 20px 25px;
-        border-right: none;
-        border-bottom: 1px solid #ececec;
-        box-shadow: none;
+        max-width: none;
         margin: 0;
-    }
-
-    .photo-card {
-        margin: 0 auto;
-        display: flex;
-        justify-content: center;
-    }
-
-    .sidebar-photo {
-        width: 180px;
-        height: 180px;
-    }
-
-    .sidebar-name {
-        text-align: center;
-        margin-top: 15px;
-    }
-
-    .sidebar-title,
-    .sidebar-content {
-        text-align: center;
-    }
-
-    .nav-section p {
-        margin: 6px 0;
+        padding: 25px 20px;
+        border-right: none;
+        border-bottom: 1px solid #eee;
     }
 
     /* Main content becomes full width */
-    .content {
-        padding: 25px;
+.content {
         width: 100%;
-        max-width: 100%;
-        margin-top: 15px;
+        max-width: none;
+        margin: 0 !important;
+        padding: 25px 20px !important;
+        position: relative;
+        z-index: 5; /* fixes click-blocking */
     }
 
-    .feed-item {
-        padding: 15px 0;
+    /* Photo centered, full width safe */
+.photo-card {
+        display: flex;
+        justify-content: center;
+        width: 100%;
     }
 
-    h1 {
-        font-size: 1.7rem;
+    .sidebar-photo {
+        width: 160px;
+        height: 160px;
+    }
+
+    .sidebar-content,
+    .sidebar-title,
+    .sidebar-name {
+        text-align: center;
+    }
+
+    /* Remove the weird white box look */
+    body {
+        background: #ffffff;
+        margin: 0;
+        padding: 0;
     }
 }
 
