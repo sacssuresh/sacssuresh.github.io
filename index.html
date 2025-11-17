@@ -1,35 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8"/>
-  <title>LoomLabs Studio</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      padding: 40px;
-      max-width: 700px;
-      margin: auto;
-      line-height: 1.6;
-    }
-  </style>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Suresh Kumar | Architect & Engineer</title>
+    <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
-  <h1>LoomLabs Studio</h1>
-  <p>Welcome! I build mobile apps like Tapsy (memory game) and PathLoom (productivity app). More apps coming soon.</p>
-  
-  <h2>Contact</h2>
-  <p>Email: sacssuresh@gmail.com</p>
+    <nav>
+        <div class="logo">SURESH</div>
+        <div class="links">
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#writing">Writing</a>
+            <a href="#interests">Interests</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </nav>
 
-  <h2>Apps</h2>
-  <ul>
-    <li><strong>Tapsy</strong> – Memory game for everyone</li>
-    <li><strong>PathLoom</strong> – Productivity & habit tracking app (coming soon)</li>
-  </ul>
+    <header class="hero">
+        <h1><span class="neon">Suresh Kumar Balasubramanian</span></h1>
+        <p class="subtitle">Architecting reliable systems • Building scalable platforms • Exploring ideas</p>
+        <a href="#projects" class="cta">View My Work</a>
+    </header>
 
-  <h2>Privacy Policy</h2>
-  <p>
-    Privacy policy for Tapsy (required for Google Play):
-    <a href="tapsy_privacy.html">View Privacy Policy</a>
-  </p>
+    <section id="about" class="section">
+        <h2 class="section-title">About Me</h2>
+        <p class="text">
+            I am a Senior Advanced Software Engineer & Architect with 14+ years of experience in designing 
+            distributed systems, IoT device platforms, cloud-native microservices, observability pipelines, 
+            and mission-critical applications.
+            <br><br>
+            I bring a strong mix of system design, hands-on engineering, and architectural thinking. 
+            I love building systems that are reliable, scalable, and simple.
+        </p>
+    </section>
+
+    <section id="projects" class="section">
+        <h2 class="section-title">Featured Projects</h2>
+
+        <div class="cards">
+
+            <div class="card">
+                <h3>YourHealthNS – Architecture Assessment</h3>
+                <p>Designed a modern, cloud-native architecture involving BFF, HL7/FHIR integrations, OpenShift, 
+                and secure identity flows.</p>
+            </div>
+
+            <div class="card">
+                <h3>IoT Predictive Maintenance Platform</h3>
+                <p>Pipeline for telemetry ingestion, analytical data stores, device lifecycle orchestration, 
+                and predictive insights.</p>
+            </div>
+
+            <div class="card">
+                <h3>Device Analytics Dashboard</h3>
+                <p>Cosmos DB + Synapse Link architecture to provide historical device behaviours, firmware counts, 
+                and RPS-based cost metrics.</p>
+            </div>
+
+            <div class="card">
+                <h3>Tapsy – Mobile App</h3>
+                <p>A React Native app with secure backend integrations, upload key signing, and clean UI for learning.</p>
+            </div>
+
+            <div class="card">
+                <h3>BudgetTracker App</h3>
+                <p>Personal finance + expense tracking engine with clean architecture, EF Core, Postgres, and Identity.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="writing" class="section">
+        <h2 class="section-title">Writing & Notes</h2>
+        <p class="text">I write about architecture, observability, system design, IoT platforms, and simplifying complexity.</p>
+
+        <ul class="writing-list">
+            <li>• Why Observability Matters More Than Monitoring</li>
+            <li>• System Design: Event-Driven vs Request-Driven</li>
+            <li>• IoT: Understanding Device Lifecycle Patterns</li>
+            <li>• Cost per Device – A Practical IoT FinOps Story</li>
+            <li>• My Thoughts on Building Reliable Software</li>
+        </ul>
+    </section>
+
+    <section id="interests" class="section">
+        <h2 class="section-title">Interests & Hobbies</h2>
+        <p class="text">
+            I enjoy exploring technology, learning system design, solving architectural puzzles, 
+            developing mobile apps, reading mythology and history, walking long distances, 
+            playing with IoT devices, and thinking deeply about how systems behave.
+        </p>
+    </section>
+
+    <section id="contact" class="section">
+        <h2 class="section-title">Get in Touch</h2>
+        <p class="text">You can reach me here:</p>
+
+        <div class="contact-links">
+            <a href="https://github.com/sacssuresh" target="_blank">GitHub</a>
+            <a href="https://linkedin.com" target="_blank">LinkedIn</a>
+            <a href="mailto:suresh@example.com">Email Me</a>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2025 Suresh Kumar — Designed in a dark neon style</p>
+    </footer>
 </body>
 </html>
