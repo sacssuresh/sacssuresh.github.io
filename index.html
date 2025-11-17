@@ -3,125 +3,77 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Suresh Kumar | Architect & Engineer</title>
+    <title>Suresh Kumar Balasubramanian</title>
     <link rel="stylesheet" href="style.css" />
+    <script src="include.js" defer></script>
 </head>
 
 <body>
+<div class="container">
 
-    <!-- NAV ------------------------------------------------------------------>
-    <nav class="nav">
-        <div class="nav-logo">Suresh</div>
-        <div class="nav-links">
-            <a href="#about">About</a>
-            <a href="#work">Work</a>
-            <a href="#writing">Writing</a>
-            <a href="#interests">Interests</a>
-            <a href="#contact">Contact</a>
-        </div>
-    </nav>
+    <!-- SIDEBAR (auto-included) -->
+    <aside id="sidebar-container" class="sidebar"></aside>
 
-    <!-- HERO ----------------------------------------------------------------->
-    <header class="hero">
-        <div class="hero-inner">
-            <h1 class="hero-title">Architecting systems with clarity.</h1>
-            <p class="hero-subtitle">
-                I design and build distributed systems, cloud platforms, IoT architectures, 
-                and mission-critical software.
-            </p>
-        </div>
-    </header>
+    <!-- MAIN CONTENT -->
+    <main class="content">
 
-    <!-- ABOUT ---------------------------------------------------------------->
-    <section id="about" class="section">
-        <h2 class="section-title">About Me</h2>
-        <p class="section-text">
-            I’m a Senior Advanced Software Engineer & Architect with 14+ years of experience.
-            I specialize in designing large-scale backend systems, IoT platforms, 
-            device lifecycle models, observability pipelines, and event-driven architectures.
-            <br><br>
-            I enjoy simplifying complex platforms, designing for failure, and building 
-            systems that behave predictably under scale.
+        <h1>Architecting systems with clarity.</h1>
+        <p class="intro-text">
+            I enjoy building systems that feel simple, reliable, and thoughtful.
+            Most of my work revolves around understanding real-world behavior and designing
+            solutions that stay practical and predictable.
         </p>
-    </section>
 
-    <!-- WORK / PROJECTS ------------------------------------------------------->
-    <section id="work" class="section">
-        <h2 class="section-title">Selected Work</h2>
+        <h2>Work</h2>
 
-        <div class="card-grid">
-
-            <div class="card">
-                <h3 class="card-title">IoT Predictive Maintenance Platform</h3>
-                <p class="card-text">
-                    Designed telemetry pipelines, analytical snapshots, lifecycle state models, 
-                    and predictive insights for large fleets of IoT devices.
-                </p>
-            </div>
-
-            <div class="card">
-                <h3 class="card-title">Device Analytics Engine</h3>
-                <p class="card-text">
-                    Built a Cosmos DB + Synapse Link analytical architecture to derive 
-                    device behaviour, firmware distribution, and usage patterns.
-                </p>
-            </div>
-
-            <div class="card">
-                <h3 class="card-title">BudgetTracker App</h3>
-                <p class="card-text">
-                    A clean personal finance system using EF Core, Postgres, 
-                    Identity, and a modern UI for effortless budgeting.
-                </p>
-            </div>
-
-            <div class="card">
-                <h3 class="card-title">Tapsy – Mobile Learning App</h3>
-                <p class="card-text">
-                    A React Native learning app with secure session handling, 
-                    clean UI, and Google Play deployment workflows.
-                </p>
-            </div>
-
+        <div class="feed-item">
+            <h3>IoT Predictive Maintenance Platform</h3>
+            <p>Designed telemetry ingestion, lifecycle state modeling, and analytical snapshots to understand device behavior over time.</p>
         </div>
-    </section>
 
-    <!-- WRITING --------------------------------------------------------------->
-    <section id="writing" class="section">
-        <h2 class="section-title">Writing & Notes</h2>
-
-        <ul class="writing-list">
-            <li>• Observability vs Monitoring — A Modern Perspective</li>
-            <li>• Designing Scalable IoT Platforms</li>
-            <li>• Event-Driven Architecture — When & Why</li>
-            <li>• FinOps for IoT — Understanding Cost per Device</li>
-            <li>• Engineering with First Principles</li>
-        </ul>
-    </section>
-
-    <!-- INTERESTS ------------------------------------------------------------->
-    <section id="interests" class="section">
-        <h2 class="section-title">Interests</h2>
-        <p class="section-text">
-            Walking long distances, building hobby projects, exploring IoT devices, 
-            reading history & mythology, writing about technology, and simplifying systems.
-        </p>
-    </section>
-
-    <!-- CONTACT --------------------------------------------------------------->
-    <section id="contact" class="section">
-        <h2 class="section-title">Get in Touch</h2>
-
-        <div class="contact-links">
-            <a href="https://github.com/sacssuresh" target="_blank">GitHub</a>
-            <a href="https://linkedin.com" target="_blank">LinkedIn</a>
-            <a href="mailto:suresh@example.com">Email</a>
+        <div class="feed-item">
+            <h3>Device Analytics Engine</h3>
+            <p>Built a Cosmos DB + Synapse analytical pipeline that helps visualize firmware distribution, trends, and anomalies.</p>
         </div>
-    </section>
 
-    <footer class="footer">
-        © 2025 Suresh Kumar
-    </footer>
+        <div class="feed-item">
+            <h3>BudgetTracker App</h3>
+            <p>Simple, clean personal finance tool powered by EF Core and Postgres.</p>
+        </div>
 
+        <div class="feed-item">
+            <h3>Tapsy Mobile App</h3>
+            <p>A compact learning app built with React Native and supporting secure sessions.</p>
+        </div>
+
+        <h2>Writing</h2>
+
+        <div class="feed-item">
+            <h3>Observability vs Monitoring</h3>
+            <p>A simple perspective on how modern systems benefit from structured signals.</p>
+        </div>
+
+        <div class="feed-item">
+            <h3>Designing Scalable IoT Platforms</h3>
+            <p>Notes on handling real-world device behavior at scale.</p>
+        </div>
+
+        <div class="feed-item">
+            <h3>Event-Driven Architecture</h3>
+            <p>Why events make systems predictable and easier to evolve.</p>
+        </div>
+
+        <div class="feed-item">
+            <h3>FinOps for IoT</h3>
+            <p>Understanding cost per device and real-world consumption behavior.</p>
+        </div>
+
+        <div class="feed-item">
+            <h3>Engineering with First Principles</h3>
+            <p>My approach to simplifying complex decisions.</p>
+        </div>
+
+    </main>
+</div>
 </body>
 </html>
