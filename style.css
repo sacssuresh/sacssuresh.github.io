@@ -3,8 +3,8 @@
 body {
     margin: 0;
     font-family: 'Inter', sans-serif;
-    background: #0a0a0a;
-    color: #e4e4e4;
+    background: #1c1f26; /* softer dark slate */
+    color: #e8ecf2; /* readable light grey */
 }
 
 /* NAVIGATION */
@@ -15,25 +15,26 @@ nav {
     position: fixed;
     width: 100%;
     top: 0;
-    backdrop-filter: blur(10px);
-    background: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(12px);
+    background: rgba(28, 31, 38, 0.7); /* soft frosted glass */
+    border-bottom: 1px solid rgba(255,255,255,0.05);
 }
 
 nav .logo {
     font-size: 22px;
     font-weight: 700;
-    color: #00c8ff;
+    color: #00b8ff; /* softer neon blue */
 }
 
 nav .links a {
     margin-left: 25px;
-    color: #cfcfcf;
+    color: #d6d9df;
     text-decoration: none;
-    transition: 0.3s;
+    transition: 0.25s;
 }
 
 nav .links a:hover {
-    color: #00c8ff;
+    color: #00b8ff;
 }
 
 /* HERO */
@@ -53,29 +54,29 @@ nav .links a:hover {
 }
 
 .neon {
-    color: #00c8ff;
-    text-shadow: 0 0 15px #00c8ff;
+    color: #00b8ff;
+    text-shadow: 0 0 12px rgba(0,184,255,0.7);
 }
 
 .subtitle {
     margin-top: 20px;
     font-size: 18px;
-    color: #bdbdbd;
+    color: #c2c7cf;
 }
 
 .cta {
     margin-top: 30px;
     padding: 12px 30px;
-    border: 1px solid #00c8ff;
-    color: #00c8ff;
+    border: 1px solid #00b8ff;
+    color: #00b8ff;
     text-decoration: none;
-    border-radius: 4px;
-    transition: 0.3s;
+    border-radius: 6px;
+    transition: 0.25s;
 }
 
 .cta:hover {
-    background: #00c8ff;
-    color: #000;
+    background: #00b8ff;
+    color: #0f1115;
 }
 
 /* SECTIONS */
@@ -85,14 +86,16 @@ nav .links a:hover {
 
 .section-title {
     font-size: 32px;
-    color: #00c8ff;
-    text-shadow: 0 0 10px #00c8ff;
+    color: #00b8ff;
+    text-shadow: 0 0 10px rgba(0,184,255,0.5);
+    margin-bottom: 20px;
 }
 
 .text {
     max-width: 800px;
     font-size: 18px;
-    line-height: 1.6;
+    line-height: 1.65;
+    color: #dfe3eb;
 }
 
 /* CARDS */
@@ -105,15 +108,15 @@ nav .links a:hover {
 
 .card {
     padding: 25px;
-    background: #111;
-    border-radius: 8px;
-    border: 1px solid #1f1f1f;
+    background: #242832; /* lighter, not pitch black */
+    border-radius: 10px;
+    border: 1px solid rgba(255,255,255,0.05);
     transition: 0.3s;
 }
 
 .card:hover {
-    border: 1px solid #00c8ff;
-    box-shadow: 0 0 15px #00c8ff44;
+    border: 1px solid #00b8ff;
+    box-shadow: 0 0 15px rgba(0,184,255,0.25);
 }
 
 /* WRITING */
@@ -124,26 +127,27 @@ nav .links a:hover {
 }
 
 .writing-list li {
-    padding: 8px 0;
+    padding: 10px 0;
     font-size: 18px;
-    color: #cfcfcf;
+    color: #cfd4db;
 }
 
 /* CONTACT */
 .contact-links a {
     margin-right: 20px;
-    color: #00c8ff;
+    color: #00b8ff;
     text-decoration: none;
     font-size: 20px;
+    transition: 0.25s;
 }
 
 .contact-links a:hover {
-    text-shadow: 0 0 10px #00c8ff;
+    text-shadow: 0 0 10px rgba(0,184,255,0.7);
 }
 
 /* FOOTER */
 footer {
     text-align: center;
     padding: 40px 0;
-    color: #666;
+    color: #9198a1;
 }
