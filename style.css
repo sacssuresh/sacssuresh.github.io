@@ -9,115 +9,42 @@
 
 <body>
 
-    <!-- NAVIGATION -->
-    <nav>
-        <div class="logo">SURESH</div>
-        <div class="links">
+    <!-- NAV ------------------------------------------------------------------>
+    <nav class="nav">
+        <div class="nav-logo">Suresh</div>
+        <div class="nav-links">
             <a href="#about">About</a>
-            <a href="#projects">Projects</a>
+            <a href="#work">Work</a>
             <a href="#writing">Writing</a>
             <a href="#interests">Interests</a>
             <a href="#contact">Contact</a>
         </div>
     </nav>
 
-    <!-- HERO -->
+    <!-- HERO ----------------------------------------------------------------->
     <header class="hero">
-        <h1>Suresh Kumar Balasubramanian</h1>
-        <p class="subtitle">Architect • Engineer • Systems Thinker</p>
-        <a href="#projects" class="cta">Explore My Work</a>
+        <div class="hero-inner">
+            <h1 class="hero-title">Architecting systems with clarity.</h1>
+            <p class="hero-subtitle">
+                I design and build distributed systems, cloud platforms, IoT architectures, 
+                and mission-critical software.
+            </p>
+        </div>
     </header>
 
-    <!-- ABOUT -->
+    <!-- ABOUT ---------------------------------------------------------------->
     <section id="about" class="section">
         <h2 class="section-title">About Me</h2>
-        <p class="text">
-            I'm a Senior Advanced Software Engineer & Architect with 14+ years of experience 
-            designing high-scale distributed systems, cloud-native services, IoT device platforms, 
-            observability pipelines, and mission-critical architectures.
+        <p class="section-text">
+            I’m a Senior Advanced Software Engineer & Architect with 14+ years of experience.
+            I specialize in designing large-scale backend systems, IoT platforms, 
+            device lifecycle models, observability pipelines, and event-driven architectures.
             <br><br>
-            I enjoy simplifying complexity, crafting scalable systems, and thinking deeply about how 
-            platforms behave under real-world constraints.
+            I enjoy simplifying complex platforms, designing for failure, and building 
+            systems that behave predictably under scale.
         </p>
     </section>
 
-    <!-- PROJECTS -->
-    <section id="projects" class="section">
-        <h2 class="section-title">Selected Projects</h2>
-
-        <div class="cards">
-
-            <div class="card">
-                <h3>IoT Predictive Maintenance Platform</h3>
-                <p>Telemetry ingestion, device lifecycle state models, snapshot pipelines, 
-                and predictive event flows at scale.</p>
-            </div>
-
-            <div class="card">
-                <h3>Device Analytics & Insights Engine</h3>
-                <p>Cosmos DB + Synapse Link architecture for analyzing device behaviour, 
-                firmware distributions, and real-time usage trends.</p>
-            </div>
-
-            <div class="card">
-                <h3>BudgetTracker App</h3>
-                <p>Personal finance and expense tracking engine using EF Core, Postgres, 
-                Identity, and clean domain-driven architecture.</p>
-            </div>
-
-            <div class="card">
-                <h3>Tapsy – Mobile Learning App</h3>
-                <p>A React Native-based mobile app with secure backend session management, 
-                clean UI, and app-store ready deployment flows.</p>
-            </div>
-
-            <div class="card">
-                <h3>Architecture Templates & Blueprints</h3>
-                <p>System design docs, ADRs, network layering, BFF patterns, 
-                caching strategies, and observability standards.</p>
-            </div>
-
-        </div>
-    </section>
-
-    <!-- WRITING -->
-    <section id="writing" class="section">
-        <h2 class="section-title">Writing & Notes</h2>
-        <p class="text">I enjoy writing about architecture, system design, IoT, observability, and engineering philosophy.</p>
-
-        <ul class="writing-list">
-            <li>• Observability vs Monitoring — Why Modern Systems Need Both</li>
-            <li>• Designing Scalable IoT Platforms — Lessons Learned</li>
-            <li>• System Design: Event-Driven vs API-Driven Models</li>
-            <li>• FinOps for IoT — Understanding Cost per Device</li>
-            <li>• Building Software with First Principles Thinking</li>
-        </ul>
-    </section>
-
-    <!-- INTERESTS -->
-    <section id="interests" class="section">
-        <h2 class="section-title">Interests & Hobbies</h2>
-        <p class="text">
-            I enjoy long nature walks, learning system design, developing mobile apps, exploring IoT devices, 
-            reading mythology and history, simplifying problems, and thinking deeply about technology.
-        </p>
-    </section>
-
-    <!-- CONTACT -->
-    <section id="contact" class="section">
-        <h2 class="section-title">Get in Touch</h2>
-        <p class="text">Connect with me:</p>
-
-        <div class="contact-links">
-            <a href="https://github.com/sacssuresh" target="_blank">GitHub</a>
-            <a href="https://linkedin.com" target="_blank">LinkedIn</a>
-            <a href="mailto:suresh@example.com">Email Me</a>
-        </div>
-    </section>
-
-    <footer>
-        <p>© 2025 Suresh Kumar — Built with simplicity & clarity</p>
-    </footer>
-
-</body>
-</html>
+    <!-- WORK / PROJECTS ------------------------------------------------------->
+    <section id="work" class="section">
+        <h2 class="section-title">Selected Work</h
