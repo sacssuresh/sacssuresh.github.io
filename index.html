@@ -19,7 +19,7 @@
         </div>
 
         <h2 class="sidebar-name">Suresh Kumar<br>Balasubramanian</h2>
-        <p class="sidebar-title">Architect • Engineer • Systems Thinker</p>
+        <p class="sidebar-title">Software Engineer</p>
 
         <div class="sidebar-content">
             <h3>About Me</h3>
@@ -47,7 +47,7 @@
     <!-- MAIN CONTENT -->
     <main class="content">
 
-        <h1>Architecting systems with clarity.</h1>
+        <h1>Professional work and what I do for a living</h1>
         <p class="intro-text">
             I enjoy building systems that feel simple, reliable, and thoughtful.
             Most of my work revolves around understanding real-world behavior
@@ -57,31 +57,85 @@
         <h2>Work</h2>
 
         <section class="feed-item">
-            <h3>IoT Predictive Maintenance Platform</h3>
-            <p>Telemetry ingestion, lifecycle state modeling, analytical snapshots…</p>
-        </section>
-
-        <section class="feed-item">
-            <h3>Device Analytics Engine</h3>
-            <p>Cosmos DB + Synapse pipeline for firmware distribution insights.</p>
-        </section>
-
-        <section class="feed-item">
-            <h3>BudgetTracker App</h3>
-            <p>Simple personal finance tool using EF Core and Postgres.</p>
-        </section>
-
-        <section class="feed-item">
             <h3>Tapsy Mobile App</h3>
             <p>A React Native learning app with clean architecture.</p>
         </section>
 
         <h2>Writing</h2>
 
-        <section class="feed-item">
-            <h3>Observability vs Monitoring</h3>
-            <p>How structured signals improve system clarity.</p>
-        </section>
+      <section class="feed-item">
+    <h3>Observability vs Monitoring</h3>
+
+    <p>
+        Monitoring tells you <em>what</em> is happening.  
+        Observability helps you understand <em>why</em> it’s happening.
+    </p>
+
+    <p>
+        Monitoring is tool-driven — dashboards, alerts, metrics.  
+        Observability is behaviour-driven — signals, traces, and context that reveal how a system behaves under real-world conditions.
+    </p>
+
+    <h4>How do you set up effective monitoring?</h4>
+
+    <p>
+        In my experience, the foundation of monitoring must be driven by a senior architect or a distinguished engineer — not delegated downward. 
+        Proper monitoring is a first-class architecture concern.
+    </p>
+
+    <p><strong>Step 1 — Define SLAs, SLOs, and Error Budgets</strong><br>
+       Sit down and write your service-level objectives clearly.  
+       Define acceptable latency, slowness, and failure windows.  
+       These numbers drive everything else.
+    </p>
+
+    <p>
+        <em>Example:</em>  
+        A user-facing authentication service needs tighter alert boundaries than a notification service.  
+        A missed login breaks the user journey; a delayed notification does not.
+    </p>
+
+    <p><strong>Step 2 — Socialize shared language</strong><br>
+       Teams should deeply understand terms like <em>error budget</em>, <em>acceptable downtime</em>, and <em>recovery time</em>.  
+       Without common language, monitoring becomes inconsistent across services.
+    </p>
+
+    <p><strong>Step 3 — Prefer percentages, not raw counts</strong><br>
+       “Error rate > 5%” is correct.  
+       “Error count > 10” is not.  
+       Percentages scale with traffic; raw counts don’t.
+    </p>
+
+    <p><strong>Step 4 — Avoid unnecessary alerts</strong><br>
+       Alert fatigue is very real.  
+       I’ve seen on-call engineers and escalation leads get woken up at midnight for alerts that were simply misconfigured.
+    </p>
+
+    <p>
+        <em>Example:</em>  
+        Firing an alert for “error increase in last 15 minutes” is misleading.  
+        What you want is a <strong>sustained</strong> error rate increase, not small pockets of failure due to natural downstream variance, throttling, or partner system hiccups.
+    </p>
+
+    <h4>Modern Tooling</h4>
+
+    <p>
+        Modern observability platforms offer anomaly detection, pattern-based alerting, and AI-assisted insights.  
+        But the real value still comes from choosing an architecture that fits your system’s nature, scale, and cost boundaries.
+    </p>
+
+    <h4>What I Prefer</h4>
+
+    <p>
+        I like OpenTelemetry for tracing, Prometheus for metrics, and Elastic for logs.  
+        It’s a modern, clean, vendor-neutral setup — but cost remains the invisible architecture decision-maker.
+    </p>
+
+    <p>
+        Over the years, I’ve also used AppDynamics, Datadog, and Splunk. All are excellent tools if cost is not your top concern.
+    </p>
+</section>
+
 
         <section class="feed-item">
             <h3>Designing Scalable IoT Platforms</h3>
@@ -100,3 +154,4 @@
 
 </body>
 </html>
+
