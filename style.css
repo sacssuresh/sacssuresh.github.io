@@ -7,7 +7,7 @@ html {
 body {
     margin: 0;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-    background: #f9fafc;
+    background: #f4f5f7;
     color: #222;
 }
 
@@ -100,9 +100,11 @@ body {
 
 /* MAIN CONTENT ------------------------------------------------------ */
 .content {
-    flex: 1;
-    padding: 40px 60px;
-    max-width: 900px;
+    margin-left: 260px;   /* same as sidebar width */
+    padding: 40px 40px;   /* reduced padding */
+    max-width: 1100px;    /* wider content area */
+    width: calc(100% - 260px);
+    box-sizing: border-box;
 }
 
 .content h1 {
@@ -156,5 +158,43 @@ body {
     .sidebar-title,
     .sidebar-content {
         text-align: center;
+    }
+}
+/* RIGHT COLUMN (TOC) ------------------------------------------------ */
+
+.right-column {
+    width: 220px;
+    padding: 30px 20px;
+    margin-left: 20px;
+    font-size: 15px;
+    position: sticky;
+    top: 40px; /* stays visible as user scrolls */
+    height: fit-content;
+}
+
+.right-column h4 {
+    margin-top: 0;
+    margin-bottom: 12px;
+    font-size: 15px;
+    color: #333;
+    font-weight: 600;
+}
+
+.right-column a {
+    display: block;
+    margin: 6px 0;
+    color: #0056d6;
+    text-decoration: none;
+    line-height: 1.5;
+}
+
+.right-column a:hover {
+    text-decoration: underline;
+}
+
+/* Hide TOC on small screens (mobile/tablets) */
+@media (max-width: 1024px) {
+    .right-column {
+        display: none;
     }
 }
