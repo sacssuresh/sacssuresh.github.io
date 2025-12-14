@@ -56,10 +56,52 @@
 
         <h2>Work</h2>
 
-        <section id="Tapsy" class="feed-item">
-            <h3>Tapsy Mobile App</h3>
-            <p>A React Native learning app with clean architecture.</p>
-        </section>
+<section id="Tapsy" class="feed-item">
+    <h3>Tapsy Mobile App</h3>
+
+    <p>
+        Tapsy began as a thought experiment to understand how quickly a modern mobile app
+        can be built and released using today’s tooling.
+        The intention was not to create a feature-rich product, but to observe
+        the full journey from idea to production under realistic constraints.
+    </p>
+
+    <p>
+        The core application was built in roughly three hours using React Native,
+        with Cursor and ChatGPT assisting in scaffolding and iteration.
+        Writing the code itself was surprisingly straightforward —
+        modern frameworks and AI tools have made shipping functionality faster than ever.
+    </p>
+
+    <p>
+        What turned out to be significantly harder were the things around the code.
+        App store compliance, Expo configuration, signing, environment setup,
+        and platform-specific checks consumed far more time than development itself.
+        This gap between “working code” and “production-ready software” was very noticeable.
+    </p>
+
+    <p>
+        Beyond release mechanics, the real complexity surfaced in non-functional concerns:
+        observability, security, secrets management, and defining sensible reliability boundaries.
+        These aspects are rarely visible in demos, but they ultimately determine
+        whether a system is safe, operable, and sustainable.
+    </p>
+
+    <p>
+        The experiment reinforced a lesson I’ve seen repeatedly in larger systems as well:
+        shipping features is increasingly easy,
+        but building software that can be trusted, observed, and operated in the real world
+        is where most of the engineering effort still lives.
+    </p>
+
+    <p>
+        The source code for this experiment is available on GitHub:
+        <a href="https://github.com/sacssuresh/Tapsy" target="_blank" rel="noopener">
+            github.com/sacssuresh/Tapsy
+        </a>
+    </p>
+</section>
+
 
         <h2>Writing</h2>
 
@@ -160,3 +202,4 @@
 
 </body>
 </html>
+
